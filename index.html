@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FilmEBD | Download Latest Bangla, Hollywood & Bollywood Movies</title>
+    <meta name="description" content="Free download latest Bangla movies, Hollywood films with Bangla subtitles, and Bollywood movies from FilmEBD. HD quality 480p, 720p, 1080p available.">
+    <meta name="keywords" content="filmebd, filmebd movies download, filmebd bangla movie, download bangla movies, hollywood movies with bangla subtitles, free movie download">
+    
+    <style>
+        :root {
+            --primary: #e63946;
+            --secondary: #1d3557;
+            --dark: #0a1128;
+            --light: #f1faee;
+            --accent: #a8dadc;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-color: var(--dark);
+            color: var(--light);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 100%;
+            padding: 0 15px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: linear-gradient(135deg, #e63946 0%, #1d3557 100%);
+            padding: 15px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 100;
+        }
+        
+        .logo {
+            text-align: center;
+        }
+        
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: white;
+        }
+        
+        /* Mobile Menu */
+        .mobile-menu-btn {
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            background: none;
+            border: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+        
+        .mobile-menu {
+            position: fixed;
+            top: 60px;
+            left: -100%;
+            width: 80%;
+            height: 100vh;
+            background-color: var(--secondary);
+            transition: all 0.3s;
+            z-index: 99;
+        }
+        
+        .mobile-menu.active {
+            left: 0;
+        }
+        
+        .mobile-menu ul {
+            list-style: none;
+            padding: 20px;
+        }
+        
+        .mobile-menu li {
+            margin-bottom: 15px;
+        }
+        
+        .mobile-menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.1rem;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+        
+        .mobile-menu a:hover {
+            background-color: var(--primary);
+        }
+        
+        /* Hero Section */
+        .hero {
+            margin-top: 60px;
+            padding: 40px 0;
+            text-align: center;
+        }
+        
+        .hero h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: var(--accent);
+        }
+        
+        .hero p {
+            margin-bottom: 25px;
+            color: rgba(255,255,255,0.8);
+        }
+        
+        /* Redirect Button */
+        .redirect-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #e63946 0%, #1d3557 100%);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            box-shadow: 0 5px 15px rgba(230, 57, 70, 0.4);
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        
+        .redirect-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(230, 57, 70, 0.6);
+        }
+        
+        /* SEO Content Sections */
+        .seo-section {
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        .seo-section h3 {
+            color: var(--accent);
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .seo-section p {
+            margin-bottom: 15px;
+            color: rgba(255,255,255,0.7);
+        }
+        
+        /* Footer */
+        footer {
+            background-color: var(--secondary);
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-links {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links a {
+            color: rgba(255,255,255,0.7);
+            margin: 0 10px 10px;
+            text-decoration: none;
+        }
+        
+        .footer-links a:hover {
+            color: var(--accent);
+        }
+        
+        .copyright {
+            color: rgba(255,255,255,0.5);
+            font-size: 0.9rem;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <button class="mobile-menu-btn">☰</button>
+        <div class="logo">
+            <h1>FilmEBD</h1>
+        </div>
+        
+        <div class="mobile-menu" id="mobileMenu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Bangla Movies</a></li>
+                <li><a href="#">Hollywood</a></li>
+                <li><a href="#">Bollywood</a></li>
+                <li><a href="#">Bangla Subtitles</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section class="hero">
+            <h2>Download Latest Movies from FilmEBD</h2>
+            <p>High quality Bangla, Hollywood and Bollywood movies with Bangla subtitles. Available in 480p, 720p and 1080p.</p>
+            
+            <!-- Redirect Button -->
+            <button class="redirect-btn" onclick="window.location.href='https://fillmebd.blogspot.com/?m=1'">
+                Go to FilmEBD Movies
+            </button>
+        </section>
+        
+        <section class="seo-section">
+            <h3>Why Choose FilmEBD for Movie Downloads?</h3>
+            <p>FilmEBD is the most trusted platform for downloading the latest Bangla movies, Hollywood films with Bangla subtitles, and Bollywood movies in HD quality. Our collection is updated daily with new releases.</p>
+            <p>With FilmEBD, you get fast download speeds, multiple quality options (480p, 720p, 1080p), and virus-free files. Our Bangla subtitles are carefully synced with the movies for the best viewing experience.</p>
+        </section>
+        
+        <section class="seo-section">
+            <h3>How to Download Movies from FilmEBD</h3>
+            <p>Downloading movies from FilmEBD is simple and straightforward. Just browse our collection of Bangla movies, Hollywood films with Bangla subtitles, or Bollywood movies, click on your preferred quality (480p, 720p or 1080p), and start downloading.</p>
+            <p>We provide direct download links with fast speeds. No registration required - just click and download your favorite movies instantly.</p>
+            
+            <!-- Second Redirect Button -->
+            <div style="text-align: center; margin-top: 20px;">
+                <button class="redirect-btn" onclick="window.location.href='https://fillmebd.blogspot.com/?m=1'">
+                    Click to Download Movies Now
+                </button>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Bangla Movies</a>
+            <a href="#">Hollywood</a>
+            <a href="#">Bollywood</a>
+            <a href="#">Bangla Subtitles</a>
+            <a href="#">DMCA</a>
+            <a href="#">Contact</a>
+        </div>
+        <p class="copyright">© 2023 FilmEBD | filmebd movies download | filmebd bangla movie</p>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.getElementById('mobileMenu').classList.toggle('active');
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(e) {
+            if (!e.target.closest('.mobile-menu') && !e.target.closest('.mobile-menu-btn')) {
+                document.getElementById('mobileMenu').classList.remove('active');
+            }
+        });
+        
+        // Optional: Auto-redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = "https://fillmebd.blogspot.com/?m=1";
+        }, 10000); // 10 seconds
+    </script>
+</body>
+</html>
