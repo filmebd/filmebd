@@ -1,1 +1,1 @@
-https://github.com/filmebd/filmebd
+https://filmebd.github.io/filmebd/
